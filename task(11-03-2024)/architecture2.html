@@ -1,0 +1,272 @@
+<html>
+    <head>
+        <style>
+            nav {
+            text-align: center;
+            position:fixed;
+            width:100%;
+            padding:5px 10px;
+            background-color:whitesmoke;
+        }
+        nav div:hover {
+            background-color: blanchedalmond;
+            color: black;
+        }
+            body, label{
+                font-style: Georgia, serif;
+            }
+            label{
+                font-weight: bold;
+            }
+            #rightitem{
+                float:left;
+                position:relative;
+                left:0;
+            }
+            #leftitem1{
+                float:right;
+                position:relative;
+                right: 245px;;
+            }
+            #logo{
+                background-image: url('https://www.w3schools.com/w3images/architect.jpg');
+                height: 800px;
+                font-size: 30px;
+                background-size: cover;
+                display:flex;
+                justify-content: center;
+                align-items:center;
+                color:black;
+                padding:20px;
+            }
+            #BR{
+                padding:1px;
+                border:1px solid black;
+                margin:2px;
+                background-color: black;
+                color:white;
+            }
+            #summerhouse1{
+                background-image: url('https://www.w3schools.com/w3images/house5.jpg');
+                background-size: cover;
+                width:400px;
+                height: 300px;
+                color:whitesmoke;
+                display:inline-block;
+                font-size: 20px;
+                position:relative;
+            }
+            #summerhouse1Text,#brickhouse1Text,#renovated1Text,#barnhouse1Text,#summerhouse2Text,#brickhouse2Text,#renovated2Text,#barnhouse2Text{
+                position:absolute;
+                top:0;
+                left:0;
+                padding:10px;
+                background-color: black;
+            }
+            #brickhouse1{
+                background-image: url('https://www.w3schools.com/w3images/house2.jpg');
+                width: 400px;
+                height: 300px;
+                display: inline-block;
+                font-size: 20px;
+                color:whitesmoke;
+                position: relative;
+                background-size: cover;
+                margin: 10px;
+            }
+            #renovated1{
+                background-image: url('https://www.w3schools.com/w3images/house3.jpg');
+                width: 400px;
+                height: 300px;
+                display: inline-block;
+                font-size: 20px;
+                color: whitesmoke;
+                background-size: cover;
+                position: relative;
+                margin:10px;
+            }
+            #barnhouse1{
+                background-image: url('https://www.w3schools.com/w3images/house4.jpg');
+                width: 400px;
+                height: 300px;
+                display: inline-block;
+                font-size: 20px;
+                color: whitesmoke;
+                background-size: cover;
+                position: relative;
+                margin: 10px;
+            }
+            #summerhouse2{
+                background-image: url('https://www.w3schools.com/w3images/house2.jpg');
+                width: 400px;
+                height: 300px;
+                display: inline-block;
+                font-size: 20px;
+                color: whitesmoke;
+                background-size: cover;
+                position: relative;
+                margin: 10px;
+            }
+            #brickhouse2{
+                background-image: url('https://www.w3schools.com/w3images/house5.jpg');
+                width: 400px;
+                height: 300px;
+                display: inline-block;
+                font-size: 20px;
+                color: whitesmoke;
+                background-size: cover;
+                position: relative;
+                margin: 10px;
+            }
+            #renovated2{
+                background-image: url('https://www.w3schools.com/w3images/house4.jpg');
+                width: 400px;
+                height: 300px;
+                display: inline-block;
+                font-size: 20px;
+                color: whitesmoke;
+                background-size: cover;
+                position: relative;
+                margin: 10px;
+            }
+            #barnhouse2{
+                background-image: url('https://www.w3schools.com/w3images/house3.jpg');
+                width: 400px;
+                height: 300px;
+                display: inline-block;
+                font-size: 20px;
+                color: whitesmoke;
+                background-size: cover;
+                position: relative;
+                margin: 10px;
+            }
+            #Projects{
+                width:100%;
+                text-align: center;
+                margin-top: 5px;
+            }
+            #Projects, h2{
+                margin-bottom: 10px;
+            }
+            input {
+            width: 25%;      /* Set the input width to 100% of its container */
+            box-sizing: border-box; /* Include padding and border in the width calculation */
+            padding: 10px;    /* Add padding for better visual appearance */
+            margin-bottom: 10px; /* Optional: Add some space below the input */
+            }
+            #message{
+                background-color: black;
+                color: blanchedalmond;
+                text-align: center;
+            }
+            #message:hover{
+                background-color: blueviolet;
+            }
+            footer{
+                background-color: black;
+                color:whitesmoke;
+                padding: 25px 600px;
+            }
+            .no1{
+                padding: 2px;
+                position:relative;
+                left:0;
+                width:0;
+            }
+            #leftitem2{
+                position:relative;
+                float:right;
+                right: 135px;
+            }
+            #leftitem3{
+                position:relative;
+                float:right;
+                right:10px;
+            }
+            .johndoe{
+                display:grid;
+                grid-template-columns: auto auto auto;
+                column-gap: 5px;
+            }
+            .johndoe,button{
+                width: 500px;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+        <div id="rightitem">BR Architecture</div><a href='#Projects'><div id="leftitem1"><strong>projects</strong></div></a><a href="#about"><div id="leftitem2"><strong>About</strong></div></a><a href="#Contact"><div id="leftitem3"><strong>Contact</strong></div></a>
+        </nav>
+        <center><section id="logo"><div id="BR">BR</div>Architect</section></center>
+        <table id="Projects">
+                <h2>Projects</h2>
+                <hr style="color: 2px solid black;">>
+                <tr>
+                    <td id="summerhouse1"><div id="summerhouse1Text">Summer House</div></td>
+                    <td id="brickhouse1"><div id="brickhouse1Text">Brick House</div></td>
+                    <td id="renovated1"><div id="renovated1Text">Renovated</div></td>
+                </tr>
+                <tr>
+                    <td id="summerhouse2"><div id="summerhouse2Text">Summer House</div></td>
+                    <td id="brickhouse2"><div id="brickhouse2Text">Brick House</div></td>
+                    <td id="renovated2"><div id="renovated2Text">Renovated</div></td>
+                </tr>
+        </table>
+        <table id="about">
+            <h2>About</h2>
+            <hr style="color: 2px solid black;">
+            <section style="font-family: Georgia, 'Times New Roman', Times, serif;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </section>
+            <tr class="johndoe">
+                <td>
+                    <img src="https://www.w3schools.com/w3images/team2.jpg">
+                    <h2>John Doe</h2>
+                    <h4 style="font-size: 15px;">
+                    CEO & Founder
+                    </h4>
+                    <div style="font-size: 18px; font-family: Georgia, 'Times New Roman', Times, serif;">
+                        Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+                    </div>
+                   <button>Contact</button>
+                </td>
+                </pre>
+                <td>
+                    <img src="https://www.w3schools.com/w3images/team1.jpg">
+                    <h2>Jane Doe</h2><h4 style="font-size: 15px;">
+                    Architect</h4>
+                    <div style="font-size: 18px; font-family: Georgia, 'Times New Roman', Times, serif;">
+                        Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+                    </div>
+                   <button>Contact</button>
+                </td>
+                <td>
+                    <img src="https://www.w3schools.com/w3images/team3.jpg">
+                    <h2>Mike Ross</h2><h4 style="font-size: 15px;">
+                    Architect</h4>
+                    <div style="font-size: 18px; font-family: Georgia, 'Times New Roman', Times, serif;">
+                        Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+                    </div>
+                   <button>Contact</button>
+                </td>
+                </pre>
+            </tr>
+        </table>
+        <h2 id="contact">Contact</h2>
+        <hr style="color:2px border black;">
+        <center>
+            <pre>
+            <forms action="./message.html">
+                <input type="text" placeholder="Name" id="name" name="Name">
+                <input type="email" placeholder="Mail" id="mail" name="mail">
+                <input type="text" placeholder="subject" id="subject" name="subject">
+                <a href="./message.html"><button id="message">Send Message</button></a>
+            </forms>
+            </pre>
+        </center>
+        <img src="https://www.w3schools.com/w3images/map.jpg">
+        <footer>
+            Powered by w3.css
+        </footer>
+    </body>
+</html>

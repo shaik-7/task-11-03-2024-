@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <style>
+            nav {
+            text-align: center;
+            position:fixed;
+            width:100%;
+            height: 30px;
+            padding:25px 10px;
+            background-color:beige;
+        }
+        nav div:hover {
+            background-color: blanchedalmond;
+            color: black;
+        }
+           @media only screen and (min-width: 600px){
+              body{
+                max-width:600px;
+              }
+              nav{
+                width:600px;
+              }
+              .rowitems{
+                display:flex;
+                flex-direction:column;
+                align-items:600px;
+              }
+              #rightitem{
+                display:flex;
+                flex-direction:column;
+                width:150px;
+                position:fixed;
+                left:15px;
+              }
+              #leftitem1{
+                display:flex;
+                flex-direction:column;
+                width: 150px;
+                position:fixed;
+                left: 480px;
+              }
+              .columnitems{
+                display:flex;
+                flex-direction:row;
+                justify-content:600px;
+              }
+              #leftitem2{
+                display:flex;
+                flex-direction:column;
+                width: 150px;
+                position:fixed;
+                left:20px;
+                top: 70px;
+              }
+              #leftitem3{
+                display:flex;
+                flex-direction:column;
+                width: 150px;
+                position:fixed;
+                top:70px;
+                left:478px;
+              }
+           }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <center>
+            <div id="rightitem" class="rowitems">BR Architecture</div><a href='#Projects'><div id="leftitem1" class="rowitems"><strong>projects</strong></div></a><a href="#about"><div id="leftitem2" class="columnitems"><strong>About</strong></div></a><a href="#Contact" class="columnitems"><div id="leftitem3"><strong>Contact</strong></div></a>
+            </center>
+        </nav>
+    </body>
+</html>
